@@ -1,2 +1,2 @@
 # Random-Player-Generator
-Generate random basketball players
+A website i created that generates mock basketball players at random, complete with fake names and statistics tailored to their respective positions.

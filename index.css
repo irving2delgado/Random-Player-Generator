@@ -1,0 +1,28 @@
+
+#header {
+	margin-top: 50px;
+	color: black;
+	text-align: center;
+	margin-bottom: 29px;
+}
+
+.container {
+	margin-top: 50px;
+	color: black;
+	border: solid;
+	border-color: black;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-transform:capitalize;
+
+}
+
+#outputG, #outputF {
+	font-family: "Bowlby One SC";
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+ 
