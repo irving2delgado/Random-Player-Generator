@@ -1,29 +1,16 @@
 /*global $*/
 
-alert("hello there");
-//  var playerName;
-// $.ajax({
-//   url: 'https://randomuser.me/api/',
-//   dataType: 'json',
-  
-//   success: function(data) {
-//     console.log(data);
-// 	playerName = data;
-
-//   }
-// });
-
-
-
-      
-
-
+// This is a function that creates a basketball player
 $("#buttonG").click(function() {
+		//Image swap on button push
 	$("#guardImg").attr("src", "https://i.ytimg.com/vi/Ph6zgx_IA34/maxresdefault.jpg");
+		// Function generating random numbers for the statistics
 	function getRandomInt(min, max) {
   		return Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
+// Variables containing individual statistics and its specific parameters
+
 	var shootingIn = getRandomInt(20,70);
 	var shootingOut = getRandomInt(60,100);
 	var handling = getRandomInt(60,100);
@@ -33,6 +20,8 @@ $("#buttonG").click(function() {
 	var speed = getRandomInt(60,100);
 	var strength = getRandomInt(35,85);
 	var vert = getRandomInt(10,60);
+
+// This is how i get the random names with an api using ajax then i push all the data to correct html element
 
 	var playerName;
 	var firstName;
@@ -54,20 +43,19 @@ $("#buttonG").click(function() {
 
   }
 });
-
-      
-	
-	// $("#outputG").append( "<br/> <br/> Interior Shooting " + shootingIn, "<br/> Perimeter Shooting " + shootingOut + "<br/> Ball Handling " + handling + "<br/> Passing " + passing +  "<br/> Steal " + steal + "<br/> Block " + block + "<br/> Speed " + speed + "<br/> Strength " + strength + "<br/> Vert " + vert);
 });
 
 
-
+// This is a function that creates a basketball player
 $("#buttonF").click(function() {
+	//Image swap on button push
 	$("#fwdImg").attr("src", "https://i.ytimg.com/vi/K15cgtcrpqk/maxresdefault.jpg");
+	// Function generating random numbers for the statistics
 	function getRandomInt(min, max) {
   		return Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
+// Variables containing individual statistics and its specific parameters
 	var shootingIn = getRandomInt(50,100);
 	var shootingOut = getRandomInt(45,85);
 	var handling = getRandomInt(40,85);
@@ -78,6 +66,7 @@ $("#buttonF").click(function() {
 	var strength = getRandomInt(45,100);
 	var vert = getRandomInt(25,90);
 
+// This is how i get the random names with an api using ajax then i push all the data to correct html element
 	var playerName;
 	var firstName;
 	var lastName;
@@ -98,9 +87,5 @@ $("#buttonF").click(function() {
 
   }
 });
-
-
-
-	// $("#outputF").append("<br/><br/> Interior Shooting " + shootingIn, "<br/> Perimeter Shooting " + shootingOut + "<br/> Ball Handling " + handling + "<br/> Passing " + passing +  "<br/> Steal " + steal + "<br/> Block " + block + "<br/> Speed " + speed + "<br/> Strength " + strength + "<br/> Vert " + vert);
 });
 
